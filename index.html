@@ -89,11 +89,12 @@
     width: 230px;
     height: 110px;
     background-color: #cdcdcd;
+    
     font-size: 28px;
     line-height: 60px;
     text-align: center;
     border-radius: 10px;
-    color: #fff;
+    //color: #fff;
     /* margin-bottom: 70px; */
 }
 
@@ -139,12 +140,15 @@
     </div>
   </body>
   
-<script type="text/javascript" src="./mymd5.js"></script>
+<script type="text/javascript" src="./jsmd.js"></script>
 <script> 	 
 function dovalue()
-	 {	   
+	 {	 
+	   
 	    var timestamp1 = new Date().getTime()+ 5000;	 
+	      
 	    var msg = appKey.value + appSecret.value + credits.value + timestamp1 + uid.value;
+	   
 	    var hash1 = md5(msg);      
 	    
 	    var URL1="https://activity.m.duiba.com.cn/autoLogin/autologin?" +
