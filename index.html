@@ -12,11 +12,11 @@
 .box0306 {
     position: relative;
     top: 0;
-    left: 0;
-    width: 1400px;
+    left: 10;
+    width: 1200px;
     height: 900px;
     margin: 0 auto;
-    padding-top: 189px
+    padding-top: 180px
 }
 
 .title1,.viceTip {
@@ -47,10 +47,10 @@
     width: 100%
 }
 
-.section .viceTitle {
+.section .vTitle {
     position: relative;
     top: 0;
-    left: 20px;
+    left: 10px;
     font-size: 30px;
     color: #606060;
     width: 100%;
@@ -61,7 +61,7 @@
 .section label {
     position: relative;
     margin-left: 150px;
-    width: 170px;
+    width: 120px;
     display: inline-block;
     font-size: 34px;
     color: #606060
@@ -70,7 +70,7 @@
 .section input {
     position: relative;
     left: 0;
-    width: 968px;
+    width: 468px;
     height: 120px;
     background-color: #F6F6F6;
     margin-bottom: 20px;
@@ -85,9 +85,9 @@
 .section .btn1 {
     position: relative;
     margin-top: 20px;
-    left: 605px;
+    left: 405px;
     width: 230px;
-    height: 160px;
+    height: 110px;
     background-color: #cdcdcd;
     font-size: 28px;
     line-height: 60px;
@@ -101,90 +101,17 @@
     background-color: #2d86fc
 }
 
-.section .showResult {
-    position: relative;
-    top: 0;
-    left: 150px;
-    height: 150px;
-    width: 1138px
-}
-
-.section .resultContent,.section .resultTitle {
-    float: left;
-    font-size: 30px;
-    display: inline-block
-}
-
-.section .resultTitle {
-    color: #989898
-}
-
-.section .resultContent {
-    width: 959px;
-    color: #2D86FC;
-    white-space: normal;
-    word-wrap: break-word;
-    line-height: 30px
-}
 
 .section .borders {
     position: relative;
     margin-top: 0;
-    left: 150px;
-    width: 1138px;
+    left: 50px;
+    width: 1038px;
     height: 2px;
     border-top: 2px solid #CDCDCD;
     margin-bottom: 40px
 }
 
-.section2 .resultContent {
-    width: 868px
-}
-
-.section3 .checkContent {
-    position: relative;
-    left: 150px;
-    height: 70px;
-    padding-left: 170px
-}
-
-.section3 .para15 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 70px;
-    width: 170px;
-    line-height: 70px;
-    display: inline-block;
-    font-size: 24px;
-    color: #606060
-}
-
-.section3 .para16 {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 0;
-    margin-top: 20px
-}
-
-.section3 .part17 {
-    position: relative;
-    top: -8px;
-    height: 30px;
-    line-height: 30px;
-    margin-left: 5px;
-    font-size: 18px;
-    color: #989898;
-    width: 80px
-}
-
-.section3 .part17.checked {
-    color: #2D86FC
-}
-
-.section3 .resultContent {
-    width: 807px
-}
 
 </style>
  
@@ -192,16 +119,18 @@
   <body>
     <div class="box0306">
       <div class="section section1">
+        <p class="vTitle">仅供测试使用...输入Uid,UCredit</p>
+    
         <form id="autoform">           
           <input type="hidden"   name="appKey"   id="appKey" value="46cHDo7yrQ9Ermd3Un7XC6tAskjA"/>
           <br />           
           <input type="hidden"   id="appSecret" name="appSecret" value="2Xkm1KH8vwJ1HdLuMaQ3znZpATNs" />
           <br />
           <label for="para3">Uid</label>
-          <input type="text"  id="uid" name="uid" value="uid"  placeholder="请输入Uid" />
+          <input type="text"  id="uid" name="uid" value="uid"  placeholder="请输入Uid:" />
           <br />
           <label for="para4">Credits</label>
-          <input type="text"  id="credits" name="credits" value="100" placeholder="请输入Credits" />
+          <input type="text"  id="credits" name="credits" value="100" placeholder="请输入Credits:" />
           <br />        
  
           <input name="button" type="button" class="btn1" onClick="dovalue()" value="点我进入测试"/>&nbsp;       
