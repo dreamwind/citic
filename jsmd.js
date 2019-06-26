@@ -267,7 +267,24 @@
     }
     return rawHMACMD5(key, string)
   }
-
+  
+  function geturl(v1,v2)
+	 {	 
+	   
+	    var timestamp1 = new Date().getTime()+ 5000;
+	    var appKey = "46cHDo7yrQ9Ermd3Un7XC6tAskjA";
+	    var appSecret = "2Xkm1KH8vwJ1HdLuMaQ3znZpATNs";	      
+	    var msg = appKey + appSecret + v2 + timestamp1 + v1;	   
+	    var hash1 = md5(msg);  
+	      	    
+	    var URL1="https://activity.m.duiba.com.cn/autoLogin/autologin?" +
+	             "&timestamp="+timestamp1 +
+	             "&sign="  + hash1 +
+	             "&uid="+v1+"&appKey="+appKey +
+	             "&credits="+v2 ; 
+	    return(URL1);
+	}
+	
   if (typeof define === 'function' && define.amd) {
     define(function () {
       return md5
@@ -276,5 +293,6 @@
     module.exports = md5
   } else {
     $.md5 = md5
+    $.geturl= geturl
   }
 })(this)
