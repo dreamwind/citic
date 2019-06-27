@@ -120,9 +120,9 @@
   <body>
     <div class="box0306">
       <div class="section section1">
-        <p class="vTitle">仅供测试使用...输入Uid,UCredit</p>
-    
-        <form id="autoform">           
+        <p class="vTitle">仅供测试使用.....根据输入的Uid登陆</p>
+        
+        <form id="autoform">          
      
           <label for="para3">Uid</label>
           <input type="text"  id="uid" name="uid" value="uid"  placeholder="请输入Uid:" />
@@ -142,8 +142,7 @@
 function dovalue()
 	 {	 	   
 	   
-	    var timestamp1 = new Date().getTime()+ 5000;	 
-	   
+	    var timestamp1 = new Date().getTime()+ 5000;	   
 	    var URL1=geturl(uid.value,credits.value);
 	    window.open(URL1);
 	}
