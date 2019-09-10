@@ -276,8 +276,13 @@
 	    var appSecret = "2Xkm1KH8vwJ1HdLuMaQ3znZpATNs";	      
 	    var msg = appKey + appSecret + v2 + timestamp1 + v1;	   
 	    var hash1 = md5(msg);  
-	      	    
-	    var URL1="https://activity.m.duiba.com.cn/autoLogin/autologin?" +
+	    var URL1="https://activity-pre.m.duiba.com.cn/autoLogin/autologin?" +
+	             "&timestamp="+timestamp1 +
+	             "&sign="  + hash1 +
+	             "&uid="+v1+"&appKey="+appKey +
+	             "&credits="+v2 ; 
+		 
+	    var URL2="https://activity.m.duiba.com.cn/autoLogin/autologin?" +
 	             "&timestamp="+timestamp1 +
 	             "&sign="  + hash1 +
 	             "&uid="+v1+"&appKey="+appKey +
